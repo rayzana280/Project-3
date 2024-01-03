@@ -3,6 +3,7 @@ import React from "react";
 function BicepCard({item}){
     function handleclick(){
         console.log("this button been click")
+        // need to add another effect to get the review and display them 
     }
     return(
         <div>
