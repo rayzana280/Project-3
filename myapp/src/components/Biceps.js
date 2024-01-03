@@ -14,7 +14,7 @@ function Biceps({data}){
 
     return (
      <div>
-         <button onClick={handleclick}>X</button>
+         <button onClick={handleclick}>Bicep Workouts</button>
          {display ?  data.map((item)=>{
           return <BicepCard item={item} key={item.id}/>
         }) : null}
