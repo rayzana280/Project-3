@@ -1,15 +1,19 @@
 import React from "react";
+import BicepReview from "./BicepReview";
 
-function BicepCard({item}){
+function BicepCard({item, reviewD}){
+
     function handleclick(){
         console.log("this button been click")
-        // need to add another effect to get the review and display them 
+        console.log(reviewD) //this review data just need to display them 
     }
+
     return(
         <div>
             <h2>WORKOUT: {item.name}</h2>
             <h2>SETS: {item.sets}</h2>
             <h2>REPS: {item.reps}</h2>
+            <BicepReview itemId={item.id}/>
             <button onClick={handleclick}>Show Comments</button>
         </div>
     )
