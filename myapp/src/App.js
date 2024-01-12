@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import Biceps from './components/Biceps';
+import Triceps from './components/Triceps';
+import NavBar from './components/NavBar';
 
 function App() {
 
@@ -21,10 +23,10 @@ function App() {
   }, [])
 
 
-  
   return (
     <div className="App">
-      <Biceps data={bicepsData} reviewD={reviewData}/>
+            <Biceps data={bicepsData} reviewD={reviewData}/>
+            <Triceps />
     </div>
   );
 }
