@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navStyle{
+  display: "inline-block";
+  width: "50px";
+  padding: "12px";
+  margin: "0 6px 6px";
+  background: "blue";
+  text-decoration: "none";
+  color: "white"
+}
+
+.commentsButton{
+  font-size: 13px;
+  background-color: #04AA6D;
+  transition-duration: 0.4s;
+}
+
+.commentsButton:hover{
+  background-color: #04AA6D;
+  color:white;
+}
+
+.deleteButton{
+  font-size: 13px;
+  background-color: #04AA6D;
+  transition-duration: 0.4s;
+}
+
+.deleteButton:hover{
+  background-color: #04AA6D;
+  color:white;
+}
+
+.submitButton{
+  font-size: 13px;
+  background-color: #04AA6D;
+  transition-duration: 0.4s;
+}
+
+.submitButton:hover{
+  background-color: #04AA6D;
+  color:white;
+}
+
+.submitInput{
+  width: 17%;
+  height: 30px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.workoutButton{
+  font-size: 13px;
+  background-color: #04AA6D;
+  transition-duration: 0.4s;
+}
+
+.workoutButton:hover{
+  background-color: #04AA6D;
+  color:white;
+}
