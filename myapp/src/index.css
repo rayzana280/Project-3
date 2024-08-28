@@ -76,3 +76,24 @@ code {
   background-color: #04AA6D;
   color:white;
 }
+
+.editButton{
+  font-size: 13px;
+  background-color: #04AA6D;
+  transition-duration: 0.4s;
+}
+
+.editButton:hover{
+  background-color: #04AA6D;
+  color:white;
+}
+
+.image{
+  max-width: 20%;
+  height: 20%;
+}
+
+.divCard{
+  border-style: solid;
+  border-width: 5px 20px;
+}

@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     post '/tricepsreview' do 
         review = Tricepreview.create(
             comment: params[:comment],
-            tricepworkout_id: params[:tricepworkout_id]
+            workout_id: params[:workout_id]
         )
         review.to_json
     end 
@@ -47,4 +47,21 @@ class ApplicationController < Sinatra::Base
         review.destroy
         review.to_json 
     end 
+
+    patch '/review/:id' do 
+        review = Review.find(params[:id])
+        review.update(
+            comment:params[:comment]
+        )
+        review.to_json
+    end 
+
+    patch '/tricepsreview/:id' do 
+        review = Tricepreview.find(params[:id])
+        review.update(
+            comment: params[:comment]
+        )
+        review.to_json
+    end 
+    
 end 
